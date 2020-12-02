@@ -384,10 +384,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddPharmacyController.cs" />
+    <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\HealthLibraryController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\MyAppointmentsController.cs" />
+    <Compile Include="Controllers\MyChartsController.cs" />
+    <Compile Include="Controllers\MyFormsController.cs" />
+    <Compile Include="Controllers\MyInsuranceController.cs" />
+    <Compile Include="Controllers\MyMessagesController.cs" />
+    <Compile Include="Controllers\MyProfileController.cs" />
     <Compile Include="Controllers\RecoverPasswordController.cs" />
     <Compile Include="Controllers\RegistrationController.cs" />
+    <Compile Include="Controllers\RequestAppointmentController.cs" />
+    <Compile Include="Controllers\RequestRefillController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -438,6 +450,18 @@
     <Content Include="Views\RecoverPassword\Index.cshtml" />
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutPageRegister.cshtml" />
+    <Content Include="Views\MyProfile\Index.cshtml" />
+    <Content Include="Views\Appointments\Index.cshtml" />
+    <Content Include="Views\RequestAppointment\Index.cshtml" />
+    <Content Include="Views\Messages\Index.cshtml" />
+    <Content Include="Views\MyMessages\Index.cshtml" />
+    <Content Include="Views\MyForms\Index.cshtml" />
+    <Content Include="Views\MyInsurance\Index.cshtml" />
+    <Content Include="Views\HealthLibrary\Index.cshtml" />
+    <Content Include="Views\MyCharts\Index.cshtml" />
+    <Content Include="Views\RequestRefill\Index.cshtml" />
+    <Content Include="Views\AddPharmacy\Index.cshtml" />
+    <Content Include="Views\MyAppointments\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

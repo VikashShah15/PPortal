@@ -34,7 +34,7 @@
         <header class="topbar">
             <nav class="navbar top-navbar navbar-expand-md navbar-dark">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="Dashboard.aspx">
+                    <a class="navbar-brand" href="@Url.Action("Index","Dashboard")">
                         <b>
                             <img src="~/Content/images/images-logo-icon.png" alt="homepage" class="dark-logo">
                             <img src="~/Content/images/images-logo-icon.png" alt="homepage" class="light-logo">
@@ -53,7 +53,7 @@
                     </ul>
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link waves-effect waves-dark" href="Dashboard.aspx" data-toggle="dropdown">
+                            <a class="nav-link waves-effect waves-dark" href="@Url.Action("Index","Dashboard")" data-toggle="dropdown">
                                 <i class="fas fa-bell"></i>
                                 <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
                             </a>
@@ -113,7 +113,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right animated flipInY">
                                 <!-- text-->
-                                <a href="MyProfile.aspx" class="dropdown-item"><i class="ti-settings"></i>&nbsp;Account Setting</a>
+                                <a href="@Url.Action("Index","MyProfile")" class="dropdown-item"><i class="ti-settings"></i>&nbsp;Account Setting</a>
                                 <!-- text-->
                                 <div class="dropdown-divider"></div>
                                 <!-- text-->
@@ -133,13 +133,13 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a class="waves-effect waves-dark" href="/Dashboard.aspx"><i class="icon-speedometer"></i><span class="hide-menu">Home</span></a>
+                            <a class="waves-effect waves-dark" href="@Url.Action("Index","Dashboard")"><i class="icon-speedometer"></i><span class="hide-menu">Home</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="/Appointments.aspx"><i class="ti-calendar"></i><span class="hide-menu">Appointments</span></a>
+                            <a class="waves-effect waves-dark" href="@Url.Action("Index","Appointments")"><i class="ti-calendar"></i><span class="hide-menu">Appointments</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="/Messages.aspx">
+                            <a class="waves-effect waves-dark" href="@Url.Action("Index","Messages")">
                                 <i class="ti-email"></i><span class="hide-menu">
                                     Messages
                                     <span class="badge badge-pill badge-primary text-white ml-auto">2</span>
@@ -147,30 +147,30 @@
                             </a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="MyCharts.aspx#labs"><i class="fas fa-flask"></i><span class="hide-menu">Labs</span></a>
+                            <a class="waves-effect waves-dark" href="/MyCharts#labs"><i class="fas fa-flask"></i><span class="hide-menu">Labs</span></a>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="MyForms.aspx"><i class="fab fa-wpforms"></i><span class="hide-menu">Forms</span></a>
+                            <a class="waves-effect waves-dark" href="@Url.Action("Index","MyForms")"><i class="fab fa-wpforms"></i><span class="hide-menu">Forms</span></a>
                         </li>
                         <li>
                             <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-dollar-sign"></i><span class="hide-menu">Billing</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="MyInsurance.aspx">Insurance</a></li>
+                                <li><a href="@Url.Action("Index","MyInsurance")">Insurance</a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="icon-chart"></i><span class="hide-menu">My Chart</span></a>
                             <ul aria-expanded="false" class="collapse test" id="mychartmenu">
-                                <li><a href="MyCharts.aspx#chart">Summary</a></li>
-                                <li><a href="MyCharts.aspx#medications">Medications</a></li>
-                                <li><a href="MyCharts.aspx#labs">Labs</a></li>
-                                <li><a href="MyCharts.aspx#histories">Histories</a></li>
-                                <li><a href="MyCharts.aspx#allergies">Allergies</a></li>
-                                <li><a href="MyCharts.aspx#immunizations">Immunizations</a></li>
+                                <li><a href="/MyCharts#chart">Summary</a></li>
+                                <li><a href="/MyCharts#medications">Medications</a></li>
+                                <li><a href="/MyCharts#labs">Labs</a></li>
+                                <li><a href="/MyCharts#histories">Histories</a></li>
+                                <li><a href="/MyCharts#allergies">Allergies</a></li>
+                                <li><a href="/MyCharts#immunizations">Immunizations</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="waves-effect waves-dark" href="HealthLibrary.aspx"><i class="fas fa-book"></i><span class="hide-menu">Health Education</span></a>
+                            <a class="waves-effect waves-dark" href="@Url.Action("Index","HealthLibrary")"><i class="fas fa-book"></i><span class="hide-menu">Health Education</span></a>
                         </li>
                         <li>
                             <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-ellipsis-h"></i><span class="hide-menu">Practice Links</span></a>
@@ -315,7 +315,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-                                <a href="MyMessages.aspx" class="btn btn-info">Send message</a>
+                                <a href="@Url.Action("Index","MyMessages")" class="btn btn-info">Send message</a>
                             </div>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
             },
             onFinished: function (event, currentIndex) {
                 Swal.fire("Live Appointment Success!", "Your Appointment has successfully been scheduled for Friday, July 31 2020 10:30 AM with REED FOWLER at Patient Portal - Main Office.");
-                setTimeout(function () { window.location = "MyAppointments.aspx"; }, 4000);
+                setTimeout(function () { window.location = '/MyAppointments'; }, 4000);
 
             }
         });
@@ -377,7 +377,7 @@
             },
             onFinished: function (event, currentIndex) {
                 //Swal.fire("Live Appointment Success!", "Your Appointment has successfully been scheduled for Friday, July 31 2020 10:30 AM with REED FOWLER at Patient Portal - Main Office.");
-                setTimeout(function () { window.location = "Dashboard.aspx"; }, 1000);
+                setTimeout(function () { window.location = "/Dashboard"; }, 1000);
 
             }
         });
