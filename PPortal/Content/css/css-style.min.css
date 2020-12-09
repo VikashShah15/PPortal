@@ -42147,7 +42147,7 @@ ul.list-style-none {
         color: #fff;
         text-transform: uppercase;
         font-size: 15px;
-        background: #fb9678
+        background: #212529
     }
 
         .right-sidebar .rpanel-title span {
@@ -42216,11 +42216,11 @@ ul#themecolors {
                 text-align: center
             }
 
-.default-theme {
+.defaultoption {
     background: #472e7c
 }
 
-.green-theme {
+.greenoption {
     background: #00c292
 }
 
@@ -42228,19 +42228,19 @@ ul#themecolors {
     background: #fec107
 }
 
-.red-theme {
+.redoption {
     background: #e46a76
 }
 
-.blue-theme {
+.blueoption {
     background: #03a9f3
 }
 
-.purple-theme {
+.purpleoption {
     background: #ab8ce4
 }
 
-.megna-theme {
+.megnaoption {
     background: #01c0c8
 }
 
